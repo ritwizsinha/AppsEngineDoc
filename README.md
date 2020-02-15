@@ -12,9 +12,13 @@ Setting up the development environment with Rocket Chat
  6. Start the rocketchat server using 
     > meteor run
     
-If we have made a change to the apps engine and for example made a feature in the engine and want to test that feature by making an app follow the following steps : -
+If we have made a change to the apps engine and for example made a feature in the engine and want to test that feature by making an app follow these steps : -
 1. Compile the changes in the apps-engine repository  
         > npm run compile 
-2. In the directory where app is made instead of where the production package of apps-engine replace it with the local compiled version of the apps-engine
+2. In the directory where app is madereplace production package of apps-engine with the local compiled version of the apps-engine
 3. Then the use 
         > npm install to install local version as a package
+4. Move to the rocketchat server and install the local compiled engine using 
+        > meteor npm install PATH_TO_APP_ENGINE_REPO/definition .
+5. Now run the server, the changes should be working . 
+      
