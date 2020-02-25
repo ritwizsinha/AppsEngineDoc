@@ -7,7 +7,7 @@ Setting up the development environment with Rocket Chat
     > npm install
     
 3. Make the required changes and then to see those changes compile the project using 
-
+    
     > npm run compile
     
 4. After compiling the compiled package is stored in the definition directory and we have to use this as the local package for rocket.chat. 
